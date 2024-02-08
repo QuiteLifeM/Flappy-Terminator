@@ -151,14 +151,14 @@ RectTransform:
   m_GameObject: {fileID: 95280601}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05130107, y: 0.09305776, z: 0.09305776}
+  m_LocalScale: {x: 0.03435898, y: 0.06232559, z: 0.06232559}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1036592990}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.10253906, y: 2.0465088}
+  m_AnchoredPosition: {x: 0.10253906, y: -22}
   m_SizeDelta: {x: 414, y: 412}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95280603
@@ -219,13 +219,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a5933f3743c744347b55adcaef180d00, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9b16e19d3fc53942b7b6ffea4cb7ae9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -274,12 +274,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 984194385}
+  m_Father: {fileID: 857972768}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.5, y: 22}
-  m_SizeDelta: {x: 413, y: 412}
+  m_AnchoredPosition: {x: 1.5, y: 279}
+  m_SizeDelta: {x: -1407, y: -568}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &255120801
 MonoBehaviour:
@@ -306,7 +306,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -324,7 +324,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 255120802}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &255120802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,7 +351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -650,6 +662,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 255120800}
   - {fileID: 984194385}
   - {fileID: 1036592990}
   m_Father: {fileID: 0}
@@ -688,8 +701,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 255120800}
+  m_Children: []
   m_Father: {fileID: 857972768}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -707,7 +719,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &984194387
 MonoBehaviour:
@@ -777,7 +789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.8117647}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -875,8 +887,8 @@ MonoBehaviour:
   _capacity: 5
   _template: {fileID: 1025464864006695848, guid: 994a5d8d74a60bb4bbaf4f6bb5845ae0, type: 3}
   _secondsBetweenSpawn: 4
-  _maxSpawnPositionY: 5
-  _minSpawnPositionY: -5
+  _maxSpawnPositionY: 3
+  _minSpawnPositionY: -3
 --- !u!1 &1721489138
 GameObject:
   m_ObjectHideFlags: 0

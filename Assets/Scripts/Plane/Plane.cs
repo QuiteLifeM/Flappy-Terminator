@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -16,12 +17,11 @@ public class Plane : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        ResetPlayer();
+        GameOver?.Invoke();
     }
 
     public void ResetPlayer()
     {
-        GameOver?.Invoke();
         _mover.Reset();
     }
 }

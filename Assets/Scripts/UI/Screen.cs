@@ -7,7 +7,7 @@ public abstract class Screen : MonoBehaviour
     [SerializeField] protected Button Button;
 
     private void OnEnable()
-    {
+    {   
         Button.onClick.AddListener(OnButtonClick);
     }
 
